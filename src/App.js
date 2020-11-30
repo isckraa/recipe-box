@@ -5,10 +5,20 @@ import Card from './components/Card';
 import recettes from './recettes';
 import './App.css'
 
+// Firebase
+import base from "./utils/firebase";
+
 class App extends Component {
   state = {
     recettes: {},
     pseudo: this.props.match.params.pseudo
+  }
+
+  componentDidMount() {
+    base.syncState(`/${this.state.pseudo}/recettes`,{
+      context: this,
+      state: "recettes"
+    })
   }
 
   chargerExemple = () => {
