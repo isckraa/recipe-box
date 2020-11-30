@@ -195,6 +195,10 @@ footer {
 	font-family: 'Roboto', sans-serif;
 }
 
+.admin-form textarea {
+	resize: none;
+}
+
 .card > button {
 	width: 100%;
 	background: #69F0AE;
