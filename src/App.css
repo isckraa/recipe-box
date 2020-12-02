@@ -226,8 +226,17 @@ footer {
 	margin: 0 auto 20px auto;
 }
 
-.facebook-button {
-	background-color: #3b5998;
+.github-button {
+	background-color: #ddd3d3;
+	color: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.github-button img {
+	max-width: 60px;
+	margin-right: 15px;
 }
 
 .twitter-button {
